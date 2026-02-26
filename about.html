@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>這是第一篇部落格文章 — Tofus Wang 的無用資料庫</title>
+  <title>關於我 — Tofus Wang 的無用資料庫</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
@@ -77,27 +77,15 @@
       margin-bottom: 2vh;
     }
 
-    .byline {
-      font-size: 0.85rem;
-      color: #666;
-      letter-spacing: 0.02em;
-      margin-bottom: 1vh;
-    }
-
-    .date {
-      font-size: 0.8rem;
-      color: #999;
-      margin-bottom: 4vh;
-    }
-
-    /* — thin rule before body — */
-    .body-rule {
+    /* — section rule — */
+    .section-rule {
       width: 100%;
       border: none;
       border-top: 1px solid #ddd;
       margin-bottom: 4vh;
     }
 
+    /* — content — */
     .content {
       font-size: 1.15rem;
       line-height: 2;
@@ -106,18 +94,36 @@
     }
     .content p {
       margin-bottom: 1.6em;
-      text-indent: 2em;
     }
-    .content p:first-child {
-      text-indent: 0;
+
+    /* — section headings — */
+    h2 {
+      font-family: 'Noto Serif TC', 'Georgia', serif;
+      font-size: 0.75rem;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #888;
+      margin-bottom: 3vh;
     }
-    .content p:first-child::first-letter {
-      font-size: 3.2em;
-      float: left;
-      line-height: 1;
-      margin: 0.05em 0.1em 0 0;
+
+    .section {
+      margin-bottom: 4vh;
+    }
+
+    .item {
+      margin-bottom: 1.6em;
+    }
+    .item .item-title {
+      font-size: 1.05rem;
       font-weight: 700;
-      color: #1a1a1a;
+      line-height: 1.4;
+      margin-bottom: 0.2em;
+    }
+    .item .item-detail {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.8;
     }
 
     /* — footer — */
@@ -137,21 +143,48 @@
 </head>
 <body>
   <nav class="navbar">
-    <a class="site-name" href="../index.html">無用資料庫</a>
+    <a class="site-name" href="index.html">無用資料庫</a>
     <div class="nav-links">
-      <a href="../about.html">關於我</a>
-      <a href="../index.html#blog">Blog</a>
+      <a href="about.html">關於我</a>
+      <a href="index.html#blog">Blog</a>
     </div>
   </nav>
   <hr class="header-rule">
-  <div class="category">無用資料庫</div>
-  <h1>這是第一篇部落格文章</h1>
-  <div class="byline">By Tofus Wang</div>
-  <div class="date">2026</div>
-  <hr class="body-rule">
+  <div class="category">關於我</div>
+  <h1>Tofus Wang</h1>
+  <hr class="section-rule">
+
   <div class="content">
-    <p>笑死還沒有想好，等一下再寫</p>
+    <p>這裡放一段自我介紹。可以寫你是誰、在做什麼、對什麼感興趣。</p>
   </div>
+
+  <div class="section">
+    <h2>經歷</h2>
+    <div class="item">
+      <div class="item-title">你的職位 / 角色</div>
+      <div class="item-detail">公司或組織名稱 — 2024 至今</div>
+    </div>
+    <div class="item">
+      <div class="item-title">你的職位 / 角色</div>
+      <div class="item-detail">公司或組織名稱 — 2022 – 2024</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>學歷</h2>
+    <div class="item">
+      <div class="item-title">學校名稱</div>
+      <div class="item-detail">科系 — 畢業年份</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>聯絡方式</h2>
+    <div class="item">
+      <div class="item-detail">Email: your@email.com</div>
+    </div>
+  </div>
+
   <hr class="footer-rule">
   <div class="footer">© 2026 Tofus Wang</div>
 </body>

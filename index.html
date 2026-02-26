@@ -19,6 +19,37 @@
       padding: 10vh 24px 8vh;
     }
 
+    /* — navbar — */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2vh;
+    }
+    .navbar .site-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #1a1a1a;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .navbar .site-name:hover {
+      color: #666;
+    }
+    .navbar .nav-links {
+      display: flex;
+      gap: 1.5em;
+    }
+    .navbar .nav-links a {
+      font-size: 0.85rem;
+      color: #888;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .navbar .nav-links a:hover {
+      color: #1a1a1a;
+    }
+
     /* — header rule — */
     .header-rule {
       width: 100%;
@@ -130,13 +161,20 @@
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <a class="site-name" href="index.html">無用資料庫</a>
+    <div class="nav-links">
+      <a href="about.html">關於我</a>
+      <a href="index.html#blog">Blog</a>
+    </div>
+  </nav>
   <hr class="header-rule">
   <div class="category">無用資料庫</div>
   <h1>Tofus Wang 的無用資料庫</h1>
   <p class="description">無用的東西雖然無用，但很重要，這個地方主要是在放王豆腐自己覺得無用但重要的東西</p>
   <img class="profile" src="images/profile.jpeg" alt="Tofus Wang">
   <hr class="section-rule">
-  <h2>Blog</h2>
+  <h2 id="blog">Blog</h2>
   <ul class="blog-list">
     <li>
       <a href="blog/first-post.html">
