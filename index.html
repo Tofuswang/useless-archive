@@ -3,227 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>無用之物典藏館 — 王豆腐的無用收藏</title>
+  <title>Tofus Wang 的無用資料庫</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: "Noto Serif TC", "Source Han Serif TC", "PMingLiU", serif;
-      background-color: #f5f0e8;
-      color: #3a3a3a;
-      min-height: 100vh;
+      background: #fff;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100dvh;
+      padding: 12vh 24px 8vh;
     }
-
-    header {
-      text-align: center;
-      padding: 60px 20px 40px;
-      background: linear-gradient(180deg, #e8e0d0, #f5f0e8);
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      color: #2a2a2a;
-      margin-bottom: 12px;
-    }
-
-    header p.subtitle {
+    h1 {
       font-size: 1.1rem;
-      color: #888;
-      letter-spacing: 0.1em;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      margin-bottom: 6vh;
     }
-
-    header p.description {
-      margin-top: 24px;
-      font-size: 1rem;
-      color: #666;
-      max-width: 560px;
-      margin-left: auto;
-      margin-right: auto;
+    img {
+      display: block;
+      width: min(60vw, 320px);
+      height: auto;
+      border-radius: 6px;
+      object-fit: cover;
+    }
+    p {
+      max-width: 400px;
+      margin-top: 4vh;
+      font-size: 0.95rem;
       line-height: 1.8;
-    }
-
-    .divider {
-      width: 60px;
-      height: 2px;
-      background-color: #ccc;
-      margin: 40px auto;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px 20px 80px;
-    }
-
-    .items-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-      gap: 28px;
-    }
-
-    .item-card {
-      background: #fffdf8;
-      border: 1px solid #e0d8c8;
-      border-radius: 8px;
-      padding: 28px 24px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
-    }
-
-    .item-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-    }
-
-    .item-card .item-emoji {
-      font-size: 2.4rem;
-      margin-bottom: 14px;
-      display: block;
-    }
-
-    .item-card h2 {
-      font-size: 1.2rem;
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #2a2a2a;
-    }
-
-    .item-card p {
-      font-size: 0.92rem;
-      line-height: 1.7;
-      color: #777;
-    }
-
-    .item-card .useless-tag {
-      display: inline-block;
-      margin-top: 14px;
-      font-size: 0.75rem;
-      color: #b8a88a;
-      border: 1px solid #d8ccb8;
-      border-radius: 20px;
-      padding: 3px 12px;
-      letter-spacing: 0.05em;
-    }
-
-    footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #bbb;
-      font-size: 0.85rem;
-      letter-spacing: 0.05em;
-      border-top: 1px solid #e8e0d0;
-    }
-
-    footer span {
-      display: block;
-      margin-top: 6px;
-      font-size: 0.78rem;
-      color: #ccc;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
-
-      .items-grid {
-        grid-template-columns: 1fr;
-      }
+      color: #555;
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>無用之物典藏館</h1>
-    <p class="subtitle">Useless Archive by 王豆腐</p>
-    <p class="description">
-      這裡收藏著那些看似毫無意義、卻又確實存在過的東西。<br>
-      沒有用處，不代表沒有存在的價值。
-    </p>
-  </header>
-
-  <div class="divider"></div>
-
-  <main>
-    <div class="items-grid">
-
-      <div class="item-card">
-        <span class="item-emoji">🧦</span>
-        <h2>單隻的襪子</h2>
-        <p>另一隻永遠不會出現了。它完成了作為一雙襪子的使命的一半，剩下的一半是等待。</p>
-        <span class="useless-tag">無用指數 ★★★★☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">🔑</span>
-        <h2>不知道開什麼的鑰匙</h2>
-        <p>抽屜裡總有一把這樣的鑰匙。你不敢丟，因為你不知道它對應什麼鎖。於是它就永遠待在那裡。</p>
-        <span class="useless-tag">無用指數 ★★★☆☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">📎</span>
-        <h2>被掰彎的迴紋針</h2>
-        <p>在無聊的會議中被犧牲。它曾經是一個迴紋針，現在只是一段金屬線。</p>
-        <span class="useless-tag">無用指數 ★★★★★</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">🏷️</span>
-        <h2>過期的折價券</h2>
-        <p>你一直留著它，想說總有一天會用。那一天永遠沒有來，但折價券已經過期三年了。</p>
-        <span class="useless-tag">無用指數 ★★★★☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">🖊️</span>
-        <h2>沒水的原子筆</h2>
-        <p>外觀完好無損，拿起來畫了幾圈才發現寫不出來。然後你又把它放回去了。</p>
-        <span class="useless-tag">無用指數 ★★★★☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">📦</span>
-        <h2>好看的空紙盒</h2>
-        <p>捨不得丟掉的禮品盒、鞋盒、包裝盒。你想著「以後可以裝東西」，但它們只是疊在角落積灰。</p>
-        <span class="useless-tag">無用指數 ★★★☆☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">📱</span>
-        <h2>充電線壞掉的舊手機</h2>
-        <p>它裡面可能還有一些照片。但你永遠不會再打開它了。它是一塊有回憶的磚頭。</p>
-        <span class="useless-tag">無用指數 ★★★★☆</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">🧊</span>
-        <h2>冰箱裡不明的冷凍物</h2>
-        <p>用保鮮膜包著、已經看不出原形。上面寫的日期是去年的。你選擇繼續假裝沒看到。</p>
-        <span class="useless-tag">無用指數 ★★★★★</span>
-      </div>
-
-      <div class="item-card">
-        <span class="item-emoji">🪥</span>
-        <h2>旅行帶回來的備品</h2>
-        <p>飯店的小肥皂、迷你洗髮精、一次性牙刷。你蒐集了一抽屜，但在家從來不會用它們。</p>
-        <span class="useless-tag">無用指數 ★★★☆☆</span>
-      </div>
-
-    </div>
-  </main>
-
-  <footer>
-    無用之物典藏館 &copy; 王豆腐
-    <span>「真正無用的東西，是不會被放進這裡的。」</span>
-  </footer>
-
+  <h1>Tofus Wang 的無用資料庫</h1>
+  <img src="images/profile.jpeg" alt="Tofus Wang">
+  <p>無用的東西雖然無用，但很重要，這個地方主要是在放王豆腐自己覺得無用但重要的東西</p>
 </body>
 </html>
