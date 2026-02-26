@@ -4,44 +4,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>這是第一篇部落格文章 — Tofus Wang 的無用資料庫</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      background: #fff;
-      color: #222;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      background: #faf9f6;
+      color: #1a1a1a;
+      font-family: 'Noto Serif TC', 'Georgia', serif;
+      max-width: 680px;
+      margin: 0 auto;
       min-height: 100dvh;
-      padding: 12vh 24px 8vh;
+      padding: 10vh 24px 8vh;
     }
-    h1 {
-      font-size: 1.1rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
+
+    /* — header rule — */
+    .header-rule {
+      width: 100%;
+      border: none;
+      border-top: 2px solid #1a1a1a;
       margin-bottom: 4vh;
     }
+
+    /* — category label — */
+    .category {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: #888;
+      margin-bottom: 1.5vh;
+    }
+
+    h1 {
+      font-family: 'Noto Serif TC', 'Georgia', serif;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      font-weight: 900;
+      line-height: 1.3;
+      letter-spacing: -0.01em;
+      text-align: left;
+      margin-bottom: 2vh;
+    }
+
+    .byline {
+      font-size: 0.85rem;
+      color: #666;
+      letter-spacing: 0.02em;
+      margin-bottom: 1vh;
+    }
+
+    .date {
+      font-size: 0.8rem;
+      color: #999;
+      margin-bottom: 4vh;
+    }
+
+    /* — thin rule before body — */
+    .body-rule {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #ddd;
+      margin-bottom: 4vh;
+    }
+
     .content {
-      max-width: 480px;
-      font-size: 0.95rem;
-      line-height: 1.8;
-      color: #555;
-      text-align: center;
+      font-size: 1.15rem;
+      line-height: 2;
+      color: #333;
+      text-align: left;
+    }
+    .content p {
+      margin-bottom: 1.6em;
+      text-indent: 2em;
+    }
+    .content p:first-child {
+      text-indent: 0;
+    }
+    .content p:first-child::first-letter {
+      font-size: 3.2em;
+      float: left;
+      line-height: 1;
+      margin: 0.05em 0.1em 0 0;
+      font-weight: 700;
+      color: #1a1a1a;
+    }
+
+    /* — footer — */
+    .footer-rule {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #ddd;
+      margin-top: 6vh;
+      margin-bottom: 3vh;
     }
     a.back {
-      margin-top: 6vh;
+      font-family: 'Noto Serif TC', 'Georgia', serif;
       font-size: 0.85rem;
       color: #888;
       text-decoration: none;
+      letter-spacing: 0.02em;
     }
-    a.back:hover { color: #222; }
+    a.back:hover { color: #1a1a1a; }
   </style>
 </head>
 <body>
+  <hr class="header-rule">
+  <div class="category">無用資料庫</div>
   <h1>這是第一篇部落格文章</h1>
+  <div class="byline">By Tofus Wang</div>
+  <div class="date">2026</div>
+  <hr class="body-rule">
   <div class="content">
     <p>笑死還沒有想好，等一下再寫</p>
   </div>
+  <hr class="footer-rule">
   <a class="back" href="../index.html">← 回到無用資料庫</a>
 </body>
 </html>
