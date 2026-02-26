@@ -50,17 +50,34 @@
     }
     .blog-section ul {
       list-style: none;
-    }
-    .blog-section li {
-      margin-bottom: 1.2em;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
     .blog-section a {
+      display: block;
+      padding: 16px 20px;
       font-size: 0.95rem;
       color: #555;
       text-decoration: none;
+      text-align: left;
+      background: rgba(255, 255, 255, 0.85);
+      border: 1px solid rgba(200, 200, 200, 0.4);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
     }
     .blog-section a:hover {
       color: #000;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      border-color: rgba(160, 160, 160, 0.5);
+    }
+    .blog-section a:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     }
   </style>
 </head>
@@ -72,7 +89,7 @@
   <section class="blog-section">
     <h2>Blog</h2>
     <ul>
-      <li><a href="blog/first-post.html">這是第一篇部落格文章</a></li>
+      <li><a href="blog/first-post.html">📝 這是第一篇部落格文章</a></li>
     </ul>
   </section>
 </body>
